@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.berenluth.waitasecond.MainActivity"
+    android:background="@color/colorPrimary">
+
+
+
+    <FrameLayout
+        android:id="@+id/game_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time_error_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0ms"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:textSize="10pt"/>
+
+            <TextView
+                android:id="@+id/time_remains"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="#FFFFFFFF"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="30dp"
+                android:textSize="20pt"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/start_layout"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:layout_margin="16dp"
+            android:paddingBottom="100dp"
+            android:textSize="12pt"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:text="@string/start"
+            android:textColor="#FFFFFFFF"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/end_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/avg"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12pt"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/end_res"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20pt"
+                android:textColor="#FFFFFFFF"/>
+
+            <TextView
+                android:id="@+id/record_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12pt"
+                android:paddingTop="20dp"
+                android:text="Record:"/>
+
+            <TextView
+                android:id="@+id/record_value"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15pt"
+                android:textColor="#FFFFFFFF"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

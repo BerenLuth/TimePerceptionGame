@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Wait A Second</string>
+    <string name="start">Iniziamo!</string>
+    <string name="instructions">Aspetta un secondo tra un click e l\'altro</string>
+    <string name="avg">Errore medio:</string>
+</resources>
